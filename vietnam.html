@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/vietnam.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div class="bannerVideo" id="slideshow">
+            <img src="image/blog-post-img-35.jpg" alt="">
+            <h2>BLOG</h2>
+        </div>
+        <div class="container1">
+            <header class="navbar" id="navbar">
+                <a href="#" class="logo">Travel</a>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">BLOG</a>
+                    </li>
+                    <li>
+                        <a href="#">PRODUCT</a>
+                    </li>
+                    <li>
+                        <a href="#">ABOUT</a>
+                    </li>
+                </ul>
+                <span class="menuIcon" onclick="toggleMenu();"></span>
+            </header>
+        </div>
+    </section>
+    <!-- start -->
+    <div class="img-blog container">
+        <div class="row">
+            <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                <img src="image/blog-post-img-01.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+    <!-- start -->
+    <div class="blog-text container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                <h1>MOVING TROUGH: THE EVERYDAY URBAN JUNGLE OF YOUR CITY</h1>
+                <h3 class="text-center">BUILD A LIFESTYLE AROUND YOUR BRAND, AND THE AUDIENCE WILL FOLLOW.</h3>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3"></div>
+        </div>
+    </div>
+    <!-- end -->
+    <script>
+        window.addEventListener("scroll", function () {
+            var header = this.document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+        function toggleMenu() {
+            const menuIcon = document.querySelector('.menuIcon');
+            const navbar = document.getElementById('navbar');
+            menuIcon.classList.toggle('active');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="about.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div class="bannerVideo" id="slideshow">
+            <img src="image/p1-bckg-01.jpg" alt="">
+            <h2>ABOUT</h2>
+        </div>
+        <div class="container1">
+            <header class="navbar" id="navbar">
+                <a href="#" class="logo">Travel</a>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">ABOUT</a>
+                    </li>
+                </ul>
+                <span class="menuIcon" onclick="toggleMenu();"></span>
+            </header>
+        </div>
+    </section>
+    <div class="user container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 user-text">
+                <h1>HOW I STARTED TRAVELING</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididu nt ut labore
+                    et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exerc itation ullamco laboris nisi. Ut aliquip ex ea
+                    commodo consequat.</p>
+                <button>READ MORE</button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 user-img">
+                <img src="image/p1-img-01.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="featured container">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 featured-text">
+            <h1>FEATURED IN</h1>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 featured-img">
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 featured-img-1">
+                <img src="image/h1-clients-img-01.png" alt="">
+            </div>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 featured-img-1">
+                <img src="image/h1-clients-img-02.png" alt="">
+            </div>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 featured-img-1">
+                <img src="image/h1-clients-img-03.png" alt="">
+            </div>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 featured-img-1">
+                <img src="image/h1-clients-img-04.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="join container">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 join-text">
+            <p>Lorem ipsum dolor</p>
+            <h1>JOIN IN WITH <span>#WANDERLAND</span></h1>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            var header = this.document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+        function toggleMenu() {
+            const menuIcon = document.querySelector('.menuIcon');
+            const navbar = document.getElementById('navbar');
+            menuIcon.classList.toggle('active');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
